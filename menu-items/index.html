@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example about menu items and the link</title>
+
+    <!-- Loading Normalize -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+
+    <style type="text/css">
+        body {
+            text-align: center;
+        }
+
+        section {
+            margin: 100px 0;
+        }
+
+        .menu {
+            width: 100%;
+            text-align: center;
+            /* Helps us see how much space the whole menu is taking. */
+            background: #DDD;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            /* This is to help us see where we can click the links on the menus. */
+            border: 2px solid #333;
+        }
+
+        .menu a:hover {
+            background: #b0e0e6;
+        }
+
+        .menu.hard-to-use li {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+        }
+
+        .menu.easier-to-use li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .menu.easier-to-use a {
+            display: block;
+            padding: 10px 20px;
+        }
+
+        .menu.fancy a {
+            -webkit-transition: background .5s;
+            transition: background .5s;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Menu One</h1>
+        <div class="menu hard-to-use">
+            <ul>
+                <li>
+                    <a href="#">Item One</a>
+                </li>
+                <li>
+                    <a href="#">Item Two</a>
+                </li>
+                <li>
+                    <a href="#">Item Three</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h1>Menu Two</h1>
+        <p>See how this one is much easier for someone looking at the site to use?</p>
+        <div class="menu easier-to-use">
+            <ul>
+                <li>
+                    <a href="#">Item One</a>
+                </li>
+                <li>
+                    <a href="#">Item Two</a>
+                </li>
+                <li>
+                    <a href="#">Item Three</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h1>Menu Fancy</h1>
+        <p>Just something slightly more fancy</p>
+        <div class="menu easier-to-use fancy">
+            <ul>
+                <li>
+                    <a href="#">Item One</a>
+                </li>
+                <li>
+                    <a href="#">Item Two</a>
+                </li>
+                <li>
+                    <a href="#">Item Three</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
